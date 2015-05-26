@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteBase /topftb/
+RewriteRule ^(.*)\/(\?.*)?$ $1$2 [R=301]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^page/([0-9]+)$ index.php?page=$1    [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^modpack/([A-Za-z0-9-\.]+)/([0-9]+)$ index.php?action=sort&data=modpack-$1&page=$2    [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^modpack/([A-Za-z0-9-\.]+)$ index.php?action=sort&data=modpack-$1    [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([A-Za-z]+)/([A-Za-z0-9-]+)/([0-9]+)$ index.php?action=$1&data=$2&page=$3    [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([A-Za-z]+)/([A-Za-z0-9-]+)$ index.php?action=$1&data=$2    [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([A-Za-z]+)$ index.php?action=$1 [L]

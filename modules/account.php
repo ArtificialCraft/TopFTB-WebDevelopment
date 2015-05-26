@@ -1,0 +1,4 @@
+<?
+require('checklogin.php');
+
+?>

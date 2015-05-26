@@ -1,0 +1,1549 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* { padding:0; margin:0; position:relative;}
+
+@font-face {font-family: CAL; src: url('../fonts/CAL.ttf');}
+@font-face {font-family: Arimo; src: url('../fonts/Arimo.ttf');}
+@font-face {font-family: AvenirH; src: url('../fonts/AvenirH.ttf');}
+@font-face {font-family: AvenirR; src: url('../fonts/AvenirRoman.ttf');}
+@font-face {font-family: AvenirNextCon; src: url('../fonts/AvenirNextCondensed.ttf');}
+
+body, html{
+	background:#99cc66;
+	height:100%;
+	}
+	
+#topbar{
+	width:100%;
+	height:30px;
+	background:#222;
+	z-index:10;
+	}
+	
+	#topbar #date{
+		background-image:none;
+		}
+			
+#header{
+	background:#ccc;
+	min-width:1125px;
+	min-height:190px;
+	margin:0 auto;
+	width:100%;
+	z-index:2000;
+	}
+	
+	#header #promotion{
+		height:130px;
+		width:980px;
+		margin:0 auto;
+		}
+		
+		#header #promotion #banner{
+			background:url('../i/Header/banner.png');
+			width:410px;
+			height:110px;
+			float:left;
+			margin:5px 0px 15px 10px;
+		}
+		
+		#header #promotion #sotw{
+			float:right;
+			margin-left:50px;
+			top:40px;
+			width:468px;
+			height:60px;
+			background:black;
+			position:absolute;
+			}
+			
+			#header #promotion #sotw #caption{
+				font:14px/14px Avenir;
+				top:43px;
+				height:15px;
+				width:122px;
+				padding:2px 5px 0px;
+				color:#ccc;
+				background-color:rgba(51, 51, 51, 0.5);
+				float:left;
+				z-index:100;
+				position:absolute;
+				}
+		
+	#header #navbar{
+		height:60px;
+		width:100%;
+		background:#0099ff url('../i/Header/NavBar/BG.png') top repeat-x;
+		background-size:100% 60px;
+		}
+		
+		#header #navbar .buffer > ul{
+			color:white;
+			display:inline-block;
+			background:url(../i/Header/NavBar/Module/BG.png) no-repeat left;
+			}
+		
+		#header #navbar .ddm-nav{
+			font-family:HAL, sans-serif;
+			width:146.2px;
+			height:60px;
+			float:left;
+			background:url(../i/Header/NavBar/Module/BG.png) no-repeat right;
+			list-style-type:none;
+			text-align:center;
+			}
+		
+		#header #navbar .ddm-nav:hover{
+			color:#e98300;
+			}
+		
+			#header #navbar .ddm-nav h5{
+				margin:20px 0px 0px -5px;
+				font:15px/15px Avenir Next;
+				}
+		
+			#header #navbar .ddm-nav img{
+				margin-left:-5px;
+				transition: all ease-in 0.2s;
+				}
+		
+			#header #navbar .ddm-nav .details{
+				color:white;
+				display:none;
+				text-align:left;
+				list-style-type:none;
+				}
+		
+			#header #navbar .ddm-nav.open .details{
+				display:block;
+    			white-space:nowrap;
+				margin-top:9px;
+				height:60px;
+				width:1000px;
+				}
+		
+			#header #navbar .ddm-nav.open .details li{
+				width:86px;
+				height:60px;
+				display:inline-block;
+				text-align:center;
+				font-size:12px;
+				}
+		
+			#header #navbar .ddm-nav.open .details li img{
+				margin-top:3px;
+				}
+		
+			#header #navbar .ddm-nav.open .details li span{
+				display:block;
+				}
+#login{
+	display:none;
+	}
+	
+	#loginerror {
+		margin: 0px 0px -5px 80px;
+		font: 12px/12px Myriad Pro;
+		color: rgb(255, 0, 0);
+		}
+	
+	#login #module{
+		background:url(../i/Login/BG.png);
+		width:385px;
+		height:235px;
+		position:fixed;
+		top: 50%;
+		left: 50%;
+		margin-top: -134px;
+		margin-left: -209px;
+		z-index:6000;
+		}
+			
+			#login #module h3{
+				margin:20px 0px 0px 25px;
+				font:18px/18px Arial;
+				}
+				
+			#login #module input:not(loginsubmit){
+				padding:0px 10px;
+				width:255px;
+				height:35px;
+				background-color:#e4e4e4;
+				border-style:solid;
+				border-color:#d3d3d3;
+				outline:none;
+				font:16px/16px Avenir;
+				}
+				
+				#login #module input#loginsubmit{
+					width:95px;
+					height:40px;
+					margin:5px 0px 0px 94px;
+					border-radius:5px;
+					font:12px/12px Myriad Pro;
+					font-weight:bold;
+					color:#999;
+				}
+				
+				#login #module input#loginsubmit:hover{
+					background-color:#ccc;
+					}
+				
+				#login #module input#username{
+					margin:35px 0px 0px 80px;
+					}
+				
+				#login #module input#password{
+					margin:15px 0px 0px 80px;
+					}
+					
+			#login #module #options{
+				font:12px/12px Myriad Pro;
+				color:#999;
+				margin:5px 0px 0px 80px;
+				}
+						
+				#login #module p{
+					margin-top:5px;
+					}
+			
+#core{
+	display:block;
+	min-height:250px;
+	width:1024px;
+	background:url('../i/Core/BG.png') repeat-y top center;
+	margin:0 auto;
+	padding:50px 50px 75px 50px;
+	overflow:hidden;
+	}
+	
+	#core #banners{
+		text-align:center;
+		float:right;
+		width:170px;
+		min-height:1000px;
+		margin-right:10px;
+		top:-40px;
+		}
+		
+		#core #banners .sidebanner{
+			margin-bottom:25px;
+			background:white;
+			}
+		
+#sponsoredservers{
+	cursor:pointer;
+	display:block;
+	margin:0px auto 25px;
+	height:72px;
+	width:975px;
+	background:url(../i/Core/Sponsored/BG.png) no-repeat;
+	text-align:center;
+	border-radius:10px;
+	user-select:none;
+	}
+		
+		#sponsoredservers #buffer{
+			display:none;
+			top:10px;
+			width:0px;
+			height:10px;
+			border-left:solid 15px #666;
+			border-right:solid 15px #666;
+			margin:0 auto;
+			}
+		
+		#sponsoredservers #buffer > ul{
+			display:none;
+			cursor:default;
+			}
+			
+			#sponsoredservers #buffer > ul > li{
+				list-style-type:none;
+				height:90px;
+				width:825px;
+				margin:0px auto 10px auto;
+				background:rgba(255, 255, 255, 0.85);
+				overflow:scroll;
+				}
+		
+		#sponsoredservers .rank{
+			margin-top: 25px;
+			height: 35px;
+			padding:8px 15px 0px;
+			background:#A1A1A1;
+			color:#f4c300;
+			float: left;
+			width:5px;
+			height: 30px;
+			font: 30px/30px Myriad Pro;
+			border-radius:0px;
+			user-select:none;
+			}
+		
+		#sponsoredservers .ip{
+			margin-top:-5px;
+			background: #CCC;
+			color:#333;
+			padding: 2px 0px;
+			border-radius: 0px 0px 10px 10px;
+			}
+		
+		#sponsoredservers .info{
+			margin-top:0px;
+			font:16px/25px AvenirH;
+			color:#333;
+			overflow:hidden;
+			text-align:left;
+			}
+			
+		#sponsoredservers input{
+			margin-left:45px;
+			}
+			
+		#sponsoredservers .social{
+			margin-right:0px;
+			}
+			
+		#sponsoredservers .stats{
+			margin-top:20px;
+			margin-left:37px;
+			}
+			
+		#sponsoredservers .modpack{
+			display:inline-block;
+			margin-top:10px;
+			color:#666666;
+			font-size:12px;
+			margin-left:65px;
+			text-align:center;
+			}
+				
+		#sponsoredservers .details{
+			width: 275px;
+			margin-top:0px;
+			}
+				
+		#sponsoredservers .details .social li{
+			margin-top:2px;
+			left:25px;
+			}
+			
+.serverlist{
+	padding-left:25px;
+	width:830px;
+	}
+	
+	.serverlist #servers{
+		padding-top:25px;
+		}
+	
+		.serverlist .title{
+			height:42px;
+			width:805px;
+			background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 32px, rgba(152, 153, 153, 0.7) 32px, rgba(153, 153, 153, 0.7) 42px);
+			}
+	
+		.serverlist h1{
+			width:805px;
+			font:40px/40px AvenirH;
+			float:left;
+			}
+		
+#pagebar{
+	clear:both;
+	margin:0px auto;
+	padding:10px 0px;
+	width:850px;
+	height:50px;
+	background:linear-gradient(to bottom, #000033, #000033 10px, transparent 10px, transparent 60px, #000033 60px, #000033);
+	top:25px;
+	}
+	
+	#pagebar #selector{
+		background-image:url(../i/Core/Servers/pagebar/box.png);
+		position:absolute;
+		width:150px;
+		height:50px;
+		left:44.5px;
+		}
+	
+		#pagebar ul li{
+			display:inline-block;
+			height:30px;
+			padding:5px 0px;
+			margin-left:-5px;
+			vertical-align:middle;
+			font:20px/20px Avenir;
+			text-align:center;
+			cursor:pointer;
+			top:-3px;
+			width:150px;
+			}
+	
+	#pagebar li.arrow{
+		height:40px;
+		width:35px;
+		padding:15px;
+		}
+	
+#server{
+	width:900px;
+	margin:0 auto;
+	}
+	
+	#server #heading{
+		height:75px;
+		background:#1d2023;
+		padding:5px 0px;
+		}
+	
+		#server #heading ul{
+			height:75px;
+			}
+	
+		#server #heading li{
+			display:inline-block;
+			margin-left:25px;
+			float:left;
+			vertical-align:middle;
+			}
+	
+		#server #heading #rank{
+			margin-top:25px;
+			color:#09F;
+			font:28px/28px Avenir;
+			}
+	
+		#server #heading img{
+			margin-top:10px;
+			}
+	
+		#server #heading #info{
+			margin-top:12px;
+			color:#acacac;
+			font:18px/20px Avenir;
+			}
+	
+		#server #heading #status{
+			height:40px;
+			width:100px;
+			background:#666666;
+			border-radius:15px 15px 10px 10px;
+			color:white;
+			font:10px/10px Avenir;
+			text-align:center;
+			margin-top:20px;
+			}
+	
+			#server #heading #status #inner{
+				height:22px;
+				padding-top:3px;
+				background:#66cc33;
+				border-radius:15px;
+				color:black;
+				font:18px/18px Avenir;
+				margin-bottom:3px;
+				}
+	
+	#server .title{
+		display:block;
+		padding: 5px 0px;
+		text-align:center;
+		width:900px;
+		background:#666666;
+		height:35px;
+		border-bottom:1px solid black;
+		}
+		
+		#server .title h1{
+			width:680px;
+			text-align:center;
+			font:36px/36px Avenir;
+			text-shadow:0px 5px 5px #333;
+			color:#fdb711;
+			}
+		
+		#server .title .votefor, #server  .review{
+			font:18px/18px Arimo;
+			background-color:white;
+			border-radius:7px;
+			padding-top:3px;
+			width:80px;
+			height:20px;
+			margin-top:5px;
+			}
+			
+		#server .title .votefor{
+			margin-left:30px;
+			}
+			
+		#server .title .review{
+			margin-right:30px;
+			}
+	
+	#server #display{
+		width:800px;
+		height:800px;
+		background:rgba(0, 153, 255, .2);
+		margin:0 auto;
+		padding:0px 20px;
+		overflow-y :scroll;
+		overflow-x:hidden;
+		}
+		
+		#server #display li{
+			display:inline-block;
+			float:left;
+			width:115px;
+			max-height:20px;
+			padding:5px 5px 10px 5px;
+			font:20px/27px Arimo;
+			color:#acacac;
+			text-align:center;
+			background:#1d2023;
+			cursor:pointer;
+			overflow:hidden;
+			}
+			
+			#server #display li:hover{
+				color:#09F;
+				}
+		
+		#server #display #serverip{
+			width:180px;
+			height:30px;
+			text-align:center;
+			float:right;
+			margin:5px 0 0 10px;
+			font:18px/18px Arimo;
+			padding:0px 20px 0px 55px;
+			background:url(../i/Core/icon/ip.png) #ACACAC left no-repeat;
+			border:none;
+			box-shadow:none;
+			border-radius: 5px;
+			}
+		
+		#server #display #serverinfo{
+			background-color:#acacac;
+			width:750px;
+			height:650px;
+			border-radius:5px;
+			clear:both;
+			margin-top:30px;
+			display:inline-block;
+			padding:25px;
+			}
+		
+		#server #information, #server #statistics, #server #gallery, #server #ratings{
+			display:none;
+			}
+	
+	#server #stats{
+		width:900px;
+		height:250px;
+		background:#1d2023;
+		font:24px/24px Avenir;
+		color:#acacac;
+		text-align:right;
+		margin:0 auto;
+		border-top:1px solid black;
+		}
+		
+		#server #stats h2{
+			font:36px/36px Avenir;
+			padding: 5px 0px;
+			text-align:center;
+			width:900px;
+			background:#666666;
+			color:#69be28;
+			text-shadow:0px 5px 5px #333;
+			}
+			
+		#server #stats .stars{
+			width:200px;
+			height:25px;
+			top:-25px;
+			background-image:url(../i/Core/icon/rating.png);
+			}
+			
+		#server #stats .starsbg{
+			width:201px;
+			height:25px;
+			background-image:url(../i/Core/icon/ratingBG.png);
+			}
+		
+		#server #stats table{
+			margin-top:45px;
+			}
+		
+			#server #stats table td{
+				display: inline-block;
+				width:200px;
+				margin-left:6px;
+				vertical-align: top;
+				}
+		
+			#server #stats table td img{
+				background:url(i/Core/icon/ratingBG.png);
+				}
+	
+.topform{
+	width:750px;
+    background:linear-gradient(to right, #1d2023, #1d2023 25px, transparent 25px, transparent 100%);
+	padding:10px 0px 35px 24px;
+	font:22px Myriad Pro;
+	color:#333333;
+	margin-left:50px;
+	overflow:hidden;
+	}
+	
+	.topform .formshow{
+		overflow:hidden;
+		}
+	
+	.topform h1{
+		font: 50px/30px Myriad Pro;
+		margin: 10px 0px 0px 15px;
+		}
+	
+	.topform .formshow > small{
+		margin: 10px 0px 0px 15px;
+		display:inline-block;
+		}
+	
+	.topform .formshow > div{
+		background:#999999;
+		display:inline-flex;
+		width:440px;
+		height:50px;
+		border-radius:0px 5px 5px 0px;
+		margin-top:15px;
+		float:left;
+		clear:left;
+		}
+	
+	.topform .formshow > div.social{
+		background:#999999;
+		width:750px;
+		height:auto;
+		border-radius:0px 5px 5px 0px;
+		}
+	
+	.topform .formshow > div.social select{
+		width:250px;
+		}
+	
+	.topform .formshow > div.social input{
+		background:#999999 !important;
+		box-shadow:none;
+		}
+	
+	.topform .formshow > div.big{
+		display:inline-block;
+		background:#999999;
+		height:auto;
+		border-radius:0px 5px 5px 0px;
+		overflow:hidden;
+		width:auto !important;
+		}
+	
+	.topform .formshow > div:not(.wa) > *{
+		float:none;
+		}
+	
+		.topform .formshow > div.big > div{
+			background:#666666;
+			margin-top:10px;
+			padding:10px 10px;
+			border-radius:0px 5px 5px 0px;
+			}
+	
+	.topform .formshow small.help{
+		margin-left:20px;
+		margin-top:40px;
+		width:275px;
+		white-space:nowrap;
+		}
+	
+	.topform .formshow small.help:nth-of-type(1){
+		margin-top:33px;
+		}
+	
+	.topform .formshow p{
+		padding:12px 15px 0px 15px;
+		height:20px;
+		font:20px Avenir !important;
+		border-radius:0px 5px 5px 0px;
+		text-transform:uppercase;
+		text-align:left;
+		white-space: nowrap;
+		}
+		
+		.topform div.big > p{
+			padding:12px 15px 0px 15px;
+			height:20px;
+			}
+		
+	.topform .formshow input:not([type="submit"]):not([type="checkbox"]):not([name="adcopy_response"]), .topform .formshow select{
+		display:inline-block;
+		background:#666666;
+		color:#cccccc;
+		padding:10px 0px 5px 15px;
+		height:35px;
+		margin:0 ;
+		font:27px Myriad Pro;
+		border-radius:5px;
+		text-shadow:none;
+		outline:none;
+		-webkit-appearance: none;
+		border:none;
+		}
+		
+		.topform .formshow select{
+			background:#666 url('../i/Core/icon/ddarrow.png') top right no-repeat;
+			}
+		
+		.topform .big div > textarea{
+			display:block;
+			width:410px;
+			height:70px;
+			margin:0 !important;
+			}
+	
+	.topform select{
+		width:75%;
+		height:50px !important;
+		}
+	
+	.topform .formshow .submit{
+		width:25%;
+		font:22px Myriad Pro;
+		}
+	
+		.topform .formshow .submit input{
+			width:100%;
+			height:100%;
+			font: 20px Avenir !important;
+			background-color:#999 !important;
+			text-shadow:none !important;
+			box-shadow:none !important;
+			margin:0 !important;
+			color:#333 !important;
+			outline:none !important;
+			cursor:pointer;
+			}
+	
+.topform .formshow div.captcha{
+	width:330px !important;
+	min-width:0px;
+	}
+
+#edit{
+	font-size:22px;
+	color:#555555;
+	}
+	
+	#edit .topform{
+		margin-left:-6px;
+		}
+		
+		#edit .topform textarea{
+			resize: none;
+			}
+		
+		#edit #socialdata input[name^='sociallink']{
+			color:#666;
+			}
+	
+	#edit form:not(#serverdesc){
+		display:none;
+		}
+	
+	#edit #pages{
+		height:100%;
+		width:75px;
+		display:inline-block;
+		vertical-align:top;
+		padding-top:25px;
+		font:30px Myriad Pro;
+		color:#ff9900;
+		margin-left:50px;
+		}
+		
+		#edit .page{
+			width:60px;
+			height:40px;
+			float:right;
+			background:#333333;
+			padding-top:10px;
+			margin-bottom:25px;
+			text-align:center;
+			vertical-align:central;
+			cursor:pointer;
+			}
+	
+	#edit #forms{
+		display:inline-block;
+		}
+	
+	#edit #votekey{
+		height:145px;
+		}
+	
+	#edit .gallery{
+		width:730px;
+		min-height:120px;
+		text-align:center;
+		}
+	
+		#edit .gallery img{
+			margin-right:15px;
+			opacity:0.75;
+			-webkit-filter: drop-shadow(7px 7px 5px rgba(0,0,0,0.5));
+			box-shadow: 0px 0px 12000px rgba(0, 0, 0, 0);
+			}
+	
+		#edit .gallery img:hover{
+			opacity:1;
+			}
+	
+	#edit #gallery{
+		width:auto !important;
+		}
+
+#contactus textarea, #partner textarea[name='message']{
+	width:750px;
+	height:200px;
+	}
+	
+#bid .checkboxes{
+	width:700px;
+	}
+	
+	#bid .checkboxes div{
+		height:50px;
+		font: 16px/20px Arimo !important;
+		}
+		
+#bid small.help:nth-of-type(2){
+	margin-top:28px !important;	
+	}
+		
+#bid small.help:nth-of-type(3){
+	margin-top:32px !important;	
+	}
+	
+#bid select{
+	width:340px;
+	}
+	
+#purchaseslot #slot{
+	width:361px;
+	}
+	
+#purchaseslot small.help:nth-of-type(1), #purchasepremium small.help:nth-of-type(1){
+	margin-top:160px !important;	
+	}
+	
+#purchasepremium #lvl{
+	width:365px;
+	}
+	
+#purchasepremium #selectserver{
+	width:340px;
+	}
+
+[class^='server-'] {
+	width:805px;
+	height:160px;
+	padding-top:5px;
+	margin-bottom:5px;
+	color:#333;
+	}
+	
+	.server-gold{
+		background:url(../i/Core/Servers/GoldBG.png) no-repeat top right;
+		}
+	
+	.server-blue{
+		background:url(../i/Core/Servers/BlueBG.png) no-repeat top right;
+		}
+	
+		.server-blue .info h2{
+			color:#1d2023 !important;
+			}
+	
+	.server-normal{
+		background:url(../i/Core/Servers/NormalBG.png) no-repeat top right;
+		height:130px !important;
+		}
+		
+		.server-normal .rank{
+			margin-top:22.5px !important;
+			}
+		
+		.server-normal .info .description{
+			display:none !important;
+			}
+		
+		.server-normal .details .stats{
+			margin-top:20px !important;
+			}
+		
+		.server-normal .details .rating{
+			margin-top:45px !important;
+			}
+		
+		.server-normal .details .modpack{
+			margin-top:10px !important;
+			}
+		
+		.server-normal .details .social ul{
+			top:4px !important;
+			}
+		
+		.server-normal .details .social li{
+			margin-top:4px !important;
+			}
+	
+	[class^='server-'] > div{
+		float:left;
+	}
+	
+	[class^='server-'] .rank{
+		margin-top: 39px;
+		float: left;
+		background: #1D2023;
+		text-align: center;
+		padding-top: 20px;
+		color: #09F;
+		width: 70px;
+		height: 50px;
+		border-radius:35px;
+		font: 30px/35px Myriad Pro;
+		}
+	
+	[class^='server-'] .info{
+		margin:5px 0px 0px 10px;
+		width:470px;
+		}
+		
+		[class^='server-'] .info h2{
+			font-family:AvenirH;
+			font-size:27px;
+			max-height:30px;
+			overflow:hidden;
+			font-weight: 100;
+			}
+		
+		[class^='server-'] .info .banner{
+			background:#a1a1a1;
+			color:#0099ff;
+			font-size:30px;
+			width:468px;
+			height:60px;
+			}
+		
+			[class^='server-'] .info .banner img{
+				display:table-row;
+			}
+		
+		[class^='server-'] .info .description{
+			font:14px/14px AvenirNextCon;
+			max-height:43px;
+			overflow:hidden;
+			margin-top:10px;
+			vertical-align: middle;
+			}
+	
+	[class^='server-'] .details{
+		width:250px;
+		font-family:Arimo;
+		}
+			
+		[class^='server-'] .details .ip{
+			color:#ccc;
+			font-size:16px;
+			margin:2px 0px 0px 50px;
+			width:180px;
+			text-align:center;
+			background:none;
+			border:none;
+			overflow:hidden;
+			cursor:pointer;
+			}
+		
+		[class^='server-'] .details .stats{
+			font-size:14px/17px;
+			margin-top:25px;
+			margin-left:20px;
+			width:195px;
+			text-align:center;
+			white-space:nowrap;
+			}
+		
+		[class^='server-'] .details .stats.nosocial{
+			margin-left:0px !important;
+			width:100%;
+			}
+			
+			[class^='server-'] .details .stats *{
+				display:inline-block;
+				padding-left:25px;
+				height:18px;
+				}
+		
+			[class^='server-'] .details .stats .players{
+				background:url(../i/Core/Servers/PlayerHead.png) no-repeat;
+				}
+		
+			[class^='server-'] .details .stats .votes{
+				margin-left:10px;
+				background:url(../i/Core/Servers/Upvote.png) no-repeat;
+				}
+		
+		[class^='server-'] .details .social{
+			float:right;
+			margin-right:5px;
+			}
+		
+		[class^='server-'] .details .social li{
+			width:25px;
+			list-style-type:none;
+			margin-top:15px;
+			margin-left:5px;
+			display:block;
+			}
+		
+		[class^='server-'] .details .rating{
+			width:140px;
+			height:20px;
+			margin:55px 0px 0px 45px;
+			}
+		
+		[class^='server-'] .details .rating.nosocial{
+			margin:55px auto 0px;
+			}
+			
+			[class^='server-'] .details .rating .base{
+				height:20px;
+				background:url(../i/Core/Servers/RatingBG.png);
+				}
+			
+			[class^='server-'] .details .rating .average{
+				height:20px;
+				margin-top:-20px;
+				background:url(../i/Core/Servers/Rating.png);
+				}
+			
+			[class^='server-'] .details .rating span{
+				font-size:8px;
+				top:10px;
+				margin-left:35px;
+				}
+		
+		[class^='server-'] .details .modpack{
+			font:12px/12px Arimo;
+			width:140px;
+			text-align:center;
+			margin: 25px 0px 0px 45px;
+			}
+		
+		[class^='server-'] .details .modpack.nosocial{
+			margin:25px auto 0px;
+			}
+
+#sponsored{
+	color:white;
+	margin-left:50px;
+	}
+	
+		#sponsored #bidlist div{
+			height: auto;
+			padding:15px;
+			width:370px;
+			}
+	
+		#sponsored #bidlist h2{
+			width:290px;
+			}
+		
+		#sponsored #bidlist #bidtable{
+			width:90%;
+			border-collapse:collapse;
+			font:16px/16px Arimo;
+			width:370px;
+			color:#CCC;
+			}
+		
+			#sponsored #bidlist #bidtable *{
+				text-align:center;
+				}
+		
+			#sponsored #bidlist #bidtable tr{
+				border-bottom:1px #66CC33 solid;
+				height:40px;
+				}
+		
+			#sponsored #bidlist #bidtable th, #sponsored #bidlist #bidtable td{
+				vertical-align:middle;
+				}
+		
+				#sponsored #bidlist #bidtable tr:last-child{
+					color:white;
+					}
+	
+	#sponsored #aucinfo{
+		margin:5px 0px;
+		}
+	
+		#sponsored #aucinfo h2{
+			width:200px;
+			}
+	
+		#sponsored #aucinfo div{
+			height:auto;
+			padding:15px 0px 5px 0px;
+			}
+		
+			#sponsored #aucinfo div p{
+				color:#CCC;
+				margin:0px 0px 15px 30px;
+				}
+				
+			#sponsored #aucinfo div h3{
+				font-size:18px;
+				margin-left:10px;
+				color:#09F;
+				}
+			
+.container-header{
+	font-family:Arimo;
+	margin-left:10px;
+	width:800px;
+	padding-bottom:20px;
+	}
+
+	.container-header h2{
+		font-weight:normal;
+		width:99%;
+		height:45px;
+		background-color:#1d2023;
+		padding:20px 0px 0px 1%;
+		}
+		
+	.container-header .condesc{
+		margin-left:5%;
+		width:90%;
+		background-color: #333333;
+		color: #CCC;
+		padding:10px 2.5% 10px 2.5%;
+		min-height:110px;
+		}
+	
+.container-body{
+	float:left;
+	font-family:Arimo;
+	display:inline;
+	}
+
+	.container-body h2{
+		font-weight:normal;
+		font-size:18px;
+		background-color:#1d2023;
+		height:20px;
+		min-width:60px;
+		padding:10px 0px;
+		}
+		
+		.container-body h2 li{
+			text-align:center;
+			display:inline-block;
+			list-style-type:none;
+			height:32px;
+			margin-left:15px;
+			}
+			
+		.container-body h2 li.active{
+			background: url(../i/Core/icon/active-tab.png) center bottom no-repeat;
+			}
+		
+	.container-body div{
+		margin-top:15px;
+		margin-left:40px;
+		width:400px;
+		height:500px;
+		background-color:#333333;
+		}
+
+[class^='icn']{
+	height:25px;
+	background:url(../i/Core/Servers/social/socialicons.png);
+	}
+	
+	.icn-facebook{
+		background-position:128px 0px;
+		}
+	
+	.icn-youtube{
+		background-position:75px 0px;
+		}
+	
+	.icn-google{
+		background-position:25px 0px;
+		}
+	
+	.icn-email{
+		background-position:0px 25px;
+		}
+
+h2 img{
+	float:left;
+	}
+
+.btn-popup{
+	color:white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #49afcd;
+	background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+}
+
+.topbarbtn{
+	color:#7eb8de;
+	font:14px/20px Arimo;
+	background:#222 url("http://localhost/~Anmol/topftb/css/../i/Header/NavBar/Module/BG.png") no-repeat right;
+	text-decoration:none;
+	display: inline-block;
+	padding: 4px 12px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+strong.logo{
+	background:url(../i/smalllogo.png) no-repeat;
+	display: inline-block;
+	height: 24px;
+	position: relative;
+	text-indent: -9999px;
+	width: 84px;
+	top:-3px;
+	}
+
+textarea {
+	width:300px;
+	max-width: 700px;
+	padding: 10px;
+	margin: 0 0 10px 0;
+	background: #D7D6D3;
+	border-radius: 0;
+	border: none;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.4);
+	}
+	
+
+#register{
+	text-align:center;	
+}
+
+				
+#manage{
+	padding:0px 50px;
+	}
+	
+#manage h2 {
+	font-family: Avenir;
+	font-weight: 400;
+	margin-top:25px;
+	}
+
+table.adv-table td {
+	font: 14px/14px Avenir;
+	}
+
+table.adv-table th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	color: #ccc;
+	padding: 13px 0 13px 0;
+	background: black;
+	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.2);
+	text-transform: uppercase;
+	}
+
+table.adv-table {
+	background: #EDEDEA;
+	margin: 10px 0 0 0;
+	width: 100%;
+}
+
+table.adv-table tr td {
+	text-align: center;
+	border: solid 1px #DADAD8;
+	padding: 20px 5px;
+	color: #393939;
+	font-size: 15px;
+	vertical-align:middle;
+}
+
+input.parsley-success, textarea.parsley-success {
+	color: #468847 !important;
+	background-color: #DFF0D8 !important;
+	border: 1px solid #D6E9C6 !important;
+}
+
+input.parsley-error, textarea.parsley-error {
+	color: #B94A48 !important;
+	background-color: #F2DEDE !important;
+	border: 1px solid #EED3D7 !important;
+}
+
+ul.parsley-error-list {
+	color:#F00;
+	font-size: 12px;
+	list-style-type: none;
+}
+
+ul.parsley-error-list li {
+	line-height: 11px;
+}
+
+[class^='alert-'] {
+	display: block;
+	margin: 0px auto 20px;
+	padding: 8px 35px 8px 14px;
+	border-radius: 4px;
+	width: 90%;
+}
+
+.alert-error {
+	color:black;
+	background-color: #C33;
+	border: 1px solid #933;
+}
+
+.alert-info {
+	color:#333;
+	background-color: #999;
+	font:16px/22px Arimo;
+}
+
+.open > .dropdown-menu{
+	display:block;
+	}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	list-style: none;
+	background-color:#e7e7e7;
+	border: 1px solid #CCC;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 6px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	background-clip: padding-box;
+	font-size: 14px;
+}
+
+.dropdown-menu > li > a {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: normal;
+	line-height: 20px;
+	color: #333;
+	white-space: nowrap;
+}
+	
+a{
+	color:inherit;
+	text-decoration:none;
+}
+	
+fieldset{
+	display:block;
+	padding:10px 0px;
+	text-align:center;
+	width:80%;
+	margin:0 auto;
+}
+	
+.left{
+	float:left;
+}
+	
+.right{
+	float:right;
+}
+	
+.center{
+	margin:0 auto;	
+}
+	
+.clear{
+	clear:both;
+}
+	
+[class^='btn']{
+	text-decoration:none;
+	display: inline-block;
+	padding: 4px 12px;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	background-color:black;
+	background-image: linear-gradient(to bottom, #FFF, #E6E6E6);
+	background-repeat: repeat-x;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+[id^='list']{
+	margin:25px auto;
+}
+
+input[type="text"]:not([name="adcopy_response"]):not([name="un"]), input[type="password"]:not([name="pw"]), textarea {
+	padding: 12px 12px;
+	background: #D7D6D3;
+	border-radius: 3px;
+	border: none;
+	font-size: 14px;
+	font-family: Arial, HAL, sans-serif;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.4);
+	margin:5px 0px;
+	outline:none;
+}
+
+input[type="submit"]:not(#loginsubmit){
+	padding: 5px 5px;
+	background:#CCC;
+	border-radius: 10px;
+	border: none;
+	font-size: 20px;
+	font-family: Arial, HAL, sans-serif;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.4);
+	margin:5px 0px;
+}
+
+.btn-popup{
+	color:white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #49afcd;
+	background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+	}
+
+.btn-page{
+	color:black;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color:#F90;
+	background-image: linear-gradient(to bottom, #FC9, #FC0);
+	}
+
+.btn-dropdown{
+	text-decoration:none !important;
+	color:#DADAD8;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color:#B71B28;
+	background-image:none;
+	}
+
+#chartdiv body {
+	font-family: Tahoma,Arial,Verdana;
+	font-size: 12px;
+	color: black;
+}
+
+#chartdiv a:link {color: #84c4e2;}
+#chartdiv a:visited {color:#84c4e2;}
+#chartdiv a:hover {color: #cd82ad;}
+#chartdiv a:active {color: #84c4e2;}
+
+#adcopy_response{
+	background-color:#EEE;
+	}
+	
+#chartdiv{
+	height:300px;
+}
+
+.on{
+	display:block !important;
+	}
+
+#core a{
+	text-decoration:underline;
+	}
+
+.imp{
+	color:red;
+	text-decoration:underline;
+	font-weight:bolder;	
+	}
+
+.buffer{
+	width:1024px;
+	margin:0 auto;
+	}
+	
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	position:relative;
+	color:inherit;
+	text-decoration:none;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
